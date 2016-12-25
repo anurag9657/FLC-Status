@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>FLC-Status</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>SearchController</servlet-name>
+    <servlet-class>search.SearchController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SearchController</servlet-name>
+    <url-pattern>/SearchController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>AddCaseServlet</servlet-name>
+    <servlet-class>addcase.AddCaseServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddCaseServlet</servlet-name>
+    <url-pattern>/AddCaseServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>H1bServlet</servlet-name>
+    <servlet-class>login.H1bServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>H1bServlet</servlet-name>
+    <url-pattern>/H1bServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>SearchResultController</servlet-name>
+    <servlet-class>searchresult.SearchResultController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SearchResultController</servlet-name>
+    <url-pattern>/SearchResultController</url-pattern>
+  </servlet-mapping>
+</web-app>
